@@ -32,3 +32,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+
+if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
+  export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+fi
+export GPG_TTY=$(tty)
+gpg-connect-agent updatestartuptty /bye >/dev/null
