@@ -1,0 +1,30 @@
+[submodule "aur/catppuccin-gtk-theme-latte"]
+	path = aur/catppuccin-gtk-theme-latte
+	url = https://aur.archlinux.org/catppuccin-gtk-theme-latte.git
+[submodule "aur/catppuccin-gtk-theme-mocha"]
+	path = aur/catppuccin-gtk-theme-mocha
+	url = https://aur.archlinux.org/catppuccin-gtk-theme-mocha.git
+[submodule "aur/deadbeef"]
+	path = aur/deadbeef
+	url = https://aur.archlinux.org/deadbeef.git
+[submodule "aur/deadbeef-mpris2-plugin"]
+	path = aur/deadbeef-mpris2-plugin
+	url = https://aur.archlinux.org/deadbeef-mpris2-plugin.git
+[submodule "aur/deadbeef-plugin-fb-gtk3-git"]
+	path = aur/deadbeef-plugin-fb-gtk3-git
+	url = https://aur.archlinux.org/deadbeef-plugin-fb-gtk3-git.git
+[submodule "aur/koboldcpp-bin"]
+	path = aur/koboldcpp-bin
+	url = https://aur.archlinux.org/koboldcpp-bin.git
+[submodule "aur/mergerfs"]
+	path = aur/mergerfs
+	url = https://aur.archlinux.org/mergerfs.git
+[submodule "aur/proton-ge-custom-bin"]
+	path = aur/proton-ge-custom-bin
+	url = https://aur.archlinux.org/proton-ge-custom-bin.git
+[submodule "aur/smem"]
+	path = aur/smem
+	url = https://aur.archlinux.org/smem.git
+[submodule "aur/xdg-ninja"]
+	path = aur/xdg-ninja
+	url = https://aur.archlinux.org/xdg-ninja.git
