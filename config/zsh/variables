@@ -26,3 +26,5 @@ export STACK_XDG=1
 export RENPY_PATH_TO_SAVES="$XDG_DATA_HOME/renpy"
 export PSQL_HISTORY="$XDG_DATA_HOME/psql_history"
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
+
+export BAT_THEME="Catppuccin Latte"
