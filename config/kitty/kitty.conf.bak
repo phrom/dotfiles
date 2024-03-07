@@ -1,0 +1,7 @@
+font_family CaskaydiaMono Nerd Font Mono
+font_size 14.0
+
+# BEGIN_KITTY_THEME
+# Catppuccin-Latte
+include current-theme.conf
+# END_KITTY_THEME

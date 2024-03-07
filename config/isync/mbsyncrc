@@ -1,0 +1,36 @@
+# First section: remote IMAP account
+IMAPAccount fastmail
+Host imap.fastmail.com
+Port 993
+User promano@fastmail.fm
+# For simplicity, this is how to read the password from another file.
+# For better security you should use GPG https://gnupg.org/
+PassCmd "pass mbsync/fastmail"
+SSLType IMAPS
+SSLVersions TLSv1.2
+
+IMAPStore fastmail-remote
+Account fastmail
+
+# This section describes the local storage
+MaildirStore fastmail-local
+Path  /home/phr/Code/data/mail/fastmail/
+Inbox /home/phr/Code/data/mail/fastmail/Inbox
+# The SubFolders option allows to represent all
+# IMAP subfolders as local subfolders
+SubFolders Verbatim
+
+# This section a "channel", a connection between remote and local
+Channel fastmail
+Far :fastmail-remote:
+Near :fastmail-local:
+# sync all folders. Alternatively, you can select only certain folders to sync.
+Patterns * 
+# makes sure the date of the arrival stays the same when you move 
+# messages around. Without this option, moving a message to another 
+# folder will reset the date of the message.
+CopyArrivalDate yes 
+Sync All
+# when new folders are added on server, create them locally.
+Create Near 
+SyncState *

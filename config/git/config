@@ -1,0 +1,41 @@
+[user]
+	email = mail@pedroromano.org
+	name = Pedro Henrique Romano
+
+# Always sign commits
+[user]
+	signingkey = CBF6D5A492B42BBC
+[gpg]
+	program = /usr/bin/gpg
+[commit]
+	gpgsign = true
+
+[merge]
+	# I like to make sure that merges between different branches always leave behind
+	# a merge commit, so there is an indication in git log that there was a separate
+	# branch involved, and the point where it got merged.
+	#
+	# messy truth is better than clean fabricated history
+	ff = false
+	# I don't like commits getting merged automatically. Just in case.
+	commit = false
+[pull]
+	# Local branches are equivalent to their tracked remote branches, as far as
+	# development history is concerned, since I never work on two separate
+	# clones at the same time. So fast-forwards on pulls is OK.
+	ff = true
+	# But still no automatic commits.
+	commit = false
+[gc]
+	auto = 0
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[init]
+	defaultBranch = main
+[alias]
+	gc-all = -c gc.reflogExpire=0 -c gc.reflogExpireUnreachable=0 -c gc.rerereresolved=0 -c gc.rerereunresolved=0 -c gc.pruneExpire=now gc
+[branch]
+	sort = -committerdate

@@ -1,0 +1,3 @@
+Xft.dpi: 144
+URxvt.font: xft:CaskaydiaMono Nerd Font Mono:size=14
+URxvt.perl-ext-common: "default, -searchable-scrollback"
