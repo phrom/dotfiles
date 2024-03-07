@@ -10,8 +10,11 @@ autoload -U colors && colors
 [[ "$COLORTERM" == (24bit|truecolor) || "${terminfo[colors]}" -eq '16777216' ]] || zmodload zsh/nearcolor
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
-# Use emacs keybindings
-bindkey -e
+# Use vim keybindings
+bindkey -v
+bindkey '^?' backward-delete-char
+bindkey '^[[3~' vi-delete-char
+bindkey -a '^[[3~' vi-delete-char
 
 # Autocomplete
 autoload -Uz compinit
