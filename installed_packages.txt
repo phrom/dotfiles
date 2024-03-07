@@ -10,10 +10,8 @@ catppuccin-gtk-theme-latte 0.7.1-1
 catppuccin-gtk-theme-mocha 0.7.1-1
 clang 16.0.6-2
 cloc 2.00-1
-clojure 1.11.1.1435-1
 cmake 3.28.3-1
 cpupower 6.7-1
-datomic 1.0.7075-2
 deadbeef 1.9.6-1
 deadbeef-mpris2-plugin 1.16-1
 deadbeef-plugin-fb-gtk3-git r168.g17accd5-1
