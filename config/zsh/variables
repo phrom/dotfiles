@@ -1,6 +1,6 @@
 export PATH="/home/phr/Code/scripts:/home/phr/.local/bin:$PATH"
 export EDITOR="nvim"
-export BAT_THEME="Catppuccin Mocha"
+export BAT_THEME="Catppuccin Latte"
 
 # XDG exports
 export XDG_DATA_HOME="$HOME/.local/share"
