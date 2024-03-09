@@ -16,6 +16,8 @@ deadbeef-mpris2-plugin 1.16-1
 deadbeef-plugin-fb-gtk3-git r168.g17accd5-1
 deadbeef-plugin-rating 1.2-2
 dmenu 5.2-1
+docker 1:25.0.3-1
+docker-compose 2.24.7-1
 dunst 1.10.0-1
 duperemove 0.11.3-2
 easyeffects 7.1.4-1
@@ -44,6 +46,7 @@ isync 1.4.4-4
 kitty 0.31.0-1
 koboldcpp-bin 1.60.1-1
 lazygit 0.40.2-1
+ldns 1.8.3-2
 ledger 3.3.2-4
 less 1:643-1
 lib32-pipewire 1:1.0.3-1
