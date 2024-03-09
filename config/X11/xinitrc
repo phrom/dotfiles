@@ -21,6 +21,7 @@ slstatus &
 sxhkd &
 switch_wallpapers.lisp &
 xset s off -dpms # Disable DPMS and prevent screen from blanking
+monitor-home &
 
 xrandr --output DP-0 --primary --auto --dpi 144
 xrandr --output HDMI-0 --right-of DP-0
